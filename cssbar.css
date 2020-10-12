@@ -1,0 +1,197 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+
+body {
+
+	min-height: 100px;
+	background:#cfffff ;
+}
+.logo
+{
+	margin-top:20px;
+	margin-left: 40px;
+	width: 200px;
+}
+
+.navigation
+{
+	position: fixed;
+	width: 50px;
+	height: 100vh;
+	background: #cfffff;
+	transition: 0.5s;
+	overflow: hidden;
+	z-index: 2;
+
+}	
+.navigation:hover,
+.navigation.active
+{
+	width: 300px;
+}
+.navigation ul
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.navigation ul li
+{
+	position: relative;
+	width: 100%;
+	list-style: none;
+}
+.navigation ul li:hover
+{
+	background: #cfffff;
+}
+.navigation ul li a
+{
+	position: relative;
+	display: #cfffff;
+	width: 100%;
+	display: flex;
+	text-decoration: none;
+	color: block;
+}
+.navigation ul li a .icon
+{
+	position: relative;
+	display: #cfffff;
+	min-width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+}
+.navigation ul li a .icon .fa
+{
+	font-size: 24px;
+}
+.navigation ul li a .title
+{
+	position: relative;
+	display: block;
+	padding: 0 10px;
+	height: 60px;
+	line-height: 60px;
+	display: flex;
+	text-align: start;
+	white-space: nowrap;
+}
+
+.toggle
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 60px;
+	height: 60px;
+	background: none;
+	cursor: pointer;
+}
+
+.toggle:before
+{
+	content: '\f0c9';
+	font-family: fontAwesome;
+	position: absolute;
+	width: 620px;
+	height: 100px;
+	line-height: 120px;
+	text-align: center;
+	font-size: 20px;
+	color: black;
+}
+.toggle:active:before
+{
+	content: '\f00d';
+
+}
+@media (max-width: 767px)
+{
+	.navigation
+	{
+		left: -60px;
+	}
+	.navigation.active
+	{
+		left: 0px;
+		width: 100%;
+	}
+}
+   ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: blue;
+  color: black;
+  text-align: center;
+  padding: 5px 5px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color:  #cfffff;
+}
+
+.active {
+  background-color: #fff;
+  
+}
+
+.common-btn
+{
+	padding: 10px 20px;
+	margin-right: 2px;
+	background: transparent;
+	outline: none;
+	border: 2px solid #7fffD4;
+	font-weight: bold;
+	cursor: pointer;
+}
+.common-btn .fa
+{
+	
+	text-align: center;
+	min-width: 10px;
+
+}
+.active button
+{
+	margin-top: 20px;
+	margin-bottom: 60px;
+
+}
+
+
+
+.select1
+{
+	
+	margin-left:20px;
+	
+}
+
+.cancel1
+{
+	margin-left:400px;
+	height:20px;
+	width:50px;
+	
+	
+	
+}
